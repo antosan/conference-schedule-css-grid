@@ -1,6 +1,105 @@
 import React from "react";
 import "./App.css";
 
+const schedule = [
+    {
+        session: 1,
+        timeFrom: "08:00",
+        timeTo: "09:00",
+        tracks: [1],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 2,
+        timeFrom: "08:00",
+        timeTo: "08:30",
+        tracks: [2],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 3,
+        timeFrom: "08:00",
+        timeTo: "08:30",
+        tracks: [3],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 4,
+        timeFrom: "08:00",
+        timeTo: "10:00",
+        tracks: [4],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 5,
+        timeFrom: "08:30",
+        timeTo: "10:00",
+        tracks: [3],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 6,
+        timeFrom: "09:00",
+        timeTo: "10:00",
+        tracks: [1, 2],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 7,
+        timeFrom: "10:00",
+        timeTo: "10:30",
+        tracks: [1, 2, 3, 4], // all
+        sessionTitle: "Take a break!",
+        presenter: ""
+    },
+    {
+        session: 8,
+        timeFrom: "10:30",
+        timeTo: "11:30",
+        tracks: [1],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 9,
+        timeFrom: "10:30",
+        timeTo: "11:00",
+        tracks: [2, 3],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 10,
+        timeFrom: "10:30",
+        timeTo: "11:00",
+        tracks: [4],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 11,
+        timeFrom: "11:00",
+        timeTo: "12:00",
+        tracks: [2],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    },
+    {
+        session: 12,
+        timeFrom: "11:00",
+        timeTo: "12:00",
+        tracks: [3],
+        sessionTitle: "Talk Title",
+        presenter: "Presenter"
+    }
+];
+
 function App() {
     return (
         <div>
@@ -95,7 +194,7 @@ function App() {
                         <a href="#">Talk Title</a>
                     </h3>
                     <span className="session-time">8:00 - 10:00</span>
-                    <span className="session-track">Track: 2</span>
+                    <span className="session-track">Track: 4</span>
                     <span className="session-presenter">Presenter</span>
                 </div>
 
@@ -114,7 +213,7 @@ function App() {
                         <a href="#">Talk Title</a>
                     </h3>
                     <span className="session-time">8:30 - 10:00</span>
-                    <span className="session-track">Track: 1</span>
+                    <span className="session-track">Track: 3</span>
                     <span className="session-presenter">Presenter</span>
                 </div>
 
@@ -220,7 +319,7 @@ function App() {
                 </div>
 
                 <div
-                    className="session session-11 track-3"
+                    className="session session-12 track-3"
                     style={{
                         gridColumn: "track-3",
                         gridRow: "time-1100 / time-1200"
